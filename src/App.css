@@ -6,9 +6,10 @@
   min-height: 100vh;
   
 
-  --border-item-color: #2c2c2c; 
+  --border-item-color: #727171;
   --destak-color:#f5c53b;
   --primary-color:#385ba1;
+  --secundary-color: #333333;
 }
 
 .content{

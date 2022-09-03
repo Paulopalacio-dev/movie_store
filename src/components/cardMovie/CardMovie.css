@@ -7,17 +7,9 @@
   border-radius: 10px;
   font-family:'Montserrat', sans-serif;
   margin: 30px;
-  text-align: center;
  }
 
-.poster-image{
-  background-image: url('https://www.themoviedb.org/t/p/w180/lFPHeAedYwKpF1iW83qKXtPoX9B.jpg');
-  background-repeat: no-repeat;
-  border-radius: 10px 10px 0 0;
-  padding: 60px 100px;
-}
-
-.fav-btn{
+ .fav-btn{
   position: absolute;
   padding: 10px;
   padding-left: 160px;
@@ -25,58 +17,64 @@
   text-shadow: 1px 1px 10px #000000;
 }
 
+.poster-image{
+  background-image: url('https://www.themoviedb.org/t/p/w180/lFPHeAedYwKpF1iW83qKXtPoX9B.jpg');
+  background-repeat: no-repeat;
+  border-radius: 8px 8px 0 0;
+  padding: 145px 80px;
+}
+
 .card-movie .card-details{
   flex: 1;
+  margin: 0 8px;
 }
+
+.card-movie .name-movie {
+  align-items: flex-start;
+  color: var(--secundary-color);
+  font-size: 14px;
+  height: 30px;
+ }
 
 .card-details span{
   color: var(--destak-color);
+  padding-right: 8px;
 }
 
-.card-details h5{
-  font-size: .8em;
-  font-weight: 400;
-  margin: 0 0 0 10px;
-}
-
-.card-details h4{
-  max-height:100px ;
-   margin: 0 0 0 10px;
-}
-.card-movie .name-movie {
+.card-movie .details{
   align-items: center;
-  color: var(--border-item-color);
-  margin: 10px;
-  height: 50px;
-}
-
-.card-movie .score{
-  align-items: center;
-  justify-content: center;
   display: flex;
+  justify-content: space-between;
 }
 
+.card-movie .details .score{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
 .card-movie .price-movie{
-  color: var(--border-item-color);
-  padding: 0;
+  color: var(--secundary-color);
 }
 
-.btn-details, .btn-details:visited {
+.btn-buy, .btn-buy:visited {
   background-color: var(--primary-color);
   color:#ffffff;
-  border-radius: 0 0 10px 10px;
+  width: 200px;
+  border-radius: 0 0 8px 8px;
   display: flex;  
   justify-content: center;
   padding: 10px;
   align-items: center;
   text-decoration: none;
+  letter-spacing: 0.1Sem;
 }
 
-.btn-details:hover{
+.btn-buy:hover{
   opacity: 0.8;
   transition: .4s;
+  color: var(--destak-color);
 }
 
-.btn-details span{
+.btn-buy span{
   margin-left: 10px;
 }

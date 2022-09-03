@@ -1,37 +1,85 @@
 .menu-container{
-    display: flex;
+      display: flex;
+      font-family: 'Montserrat';
 }
 
-
-
 .nav-menu {
-  background-color: #ffffff;
-  margin-top: 80px;
-  width: 500px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  position:absolute;
-  top: 0;
-  right: -100%;
-  transition: 850ms;
+    background-color: #d7e5ff;
+    margin-top: 100px;
+    width: 450px;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    right: -100%;
+    transition: 850ms;
+    border-left: solid 1px var(--primary-color);
+    border-bottom: solid 1px var(--primary-color);
 }
 
 .nav-menu.active {
-  right: 0;
-  transition: 350ms;
+    right: 0;
+    transition: 350ms;
 }
 
 button{
-  color:#ffffff;
-  margin-right: 20px;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
+    color:#ffffff;
+    margin-right: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.clear-cart{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: underline;
 }
 
 .header-cart{
-  margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 40px;
+}
+
+.item-cart{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 10px;
+    color: var(--primary-color)
+}
+
+.delete-item{
+  color: var(--primary-color);
+
+}
+
+.btn-buy, .btn-buy:visited {
+  background-color: var(--primary-color);
+  color:#ffffff;
+  width: 350px;
+  border-radius: 10px;
+  display: flex;  
+  justify-content: center;
+  padding: 10px;
+  /* align-items: center; */
+  text-decoration: none;
+}
+
+.btn-buy:hover{
+  opacity: 0.8;
+  transition: .4s;
+}
+
+.footer{
+  padding: 50px;
+  align-items: center;
   justify-content: center;
 }
 
+.total-cart{
+  display: flex;
+  justify-content: space-between;
+}

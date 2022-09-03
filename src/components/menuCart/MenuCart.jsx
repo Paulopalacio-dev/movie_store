@@ -16,33 +16,42 @@ export default function MenuCart() {
 
         <div  className={sidebar ? "nav-menu active" : "nav-menu"} style={{zIndex:1}}>
           <header className="header-cart">
-            <h1>Meu Carrinho</h1> 
-            <button style={{color:'red'}}>Esvaziar</button>
+            <h2>Meu Carrinho</h2> 
+            <button className="clear-cart">Esvaziar</button>
           </header>
-          <main>
-            <div>
-              <img src=""/>
-              <h1>Nome do filme</h1>
-              <h3>1</h3>
-              <h1>R$70,00</h1>
-              <span>icon</span>
+          <main >
+            <div className="item-cart">
+              <div  ></div>
+              <h3>Nome do filme</h3>
+              <h5>1</h5>
+              <h5>R$70,00</h5>
+              <button  className="delete-item">
+                <span class="material-icons">delete</span>
+              </button>
             </div>
-            <div>
+            <div className="item-cart">
               <img src=""/>
-              <h1>Nome do filme</h1>
-              <h3>1</h3>
-              <h1>R$70,00</h1>
-              <span>icon</span>
+              <h3>Nome do filme</h3>
+              <h5>1</h5>
+              <h5>R$70,00</h5>
+              <button  className="delete-item">
+                <span class="material-icons">delete</span>
+              </button>
             </div>
-            <div>
-              <img src=""/>
-              <h1>Nome do filme</h1>
-              <h3>1</h3>
-              <h1>R$70,00</h1>
-              <button>icon</button>
-            </div>
+           
+            <footer className="footer">
+              <div className="total-cart">
+                <h2>Total</h2>
+                <h2>R$140,00</h2>  
+              </div> 
+              <Link onClick={showSidebar} to="/cart" className="btn-buy">
+              Finalizar compra
+              </Link>
+            </footer>
           </main>
-        </div>   
+          
+        </div>  
+         
 
     </container>  
     

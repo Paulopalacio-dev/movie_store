@@ -39,8 +39,8 @@ export default function Header(props){
       </form>
       
       <div className="menu-header"> 
-      <MenuFavorite/>
-      <MenuCart/>       
+        <MenuFavorite/>
+        <MenuCart/>       
       </div>
     </container>
   )

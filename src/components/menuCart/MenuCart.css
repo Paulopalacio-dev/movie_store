@@ -1,0 +1,37 @@
+.menu-container{
+    display: flex;
+}
+
+
+
+.nav-menu {
+  background-color: #ffffff;
+  margin-top: 80px;
+  width: 500px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position:absolute;
+  top: 0;
+  right: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  right: 0;
+  transition: 350ms;
+}
+
+button{
+  color:#ffffff;
+  margin-right: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.header-cart{
+  margin: 15px;
+  justify-content: center;
+}
+

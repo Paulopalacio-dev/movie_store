@@ -1,0 +1,82 @@
+.card-movie {
+  display:flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: solid 1px var(--border-item-color);
+  max-width: 200px;
+  border-radius: 10px;
+  font-family:'Montserrat', sans-serif;
+  margin: 30px;
+  text-align: center;
+ }
+
+.poster-image{
+  background-image: url('https://www.themoviedb.org/t/p/w180/lFPHeAedYwKpF1iW83qKXtPoX9B.jpg');
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
+  padding: 60px 100px;
+}
+
+.fav-btn{
+  position: absolute;
+  padding: 10px;
+  padding-left: 160px;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #000000;
+}
+
+.card-movie .card-details{
+  flex: 1;
+}
+
+.card-details span{
+  color: var(--destak-color);
+}
+
+.card-details h5{
+  font-size: .8em;
+  font-weight: 400;
+  margin: 0 0 0 10px;
+}
+
+.card-details h4{
+  max-height:100px ;
+   margin: 0 0 0 10px;
+}
+.card-movie .name-movie {
+  align-items: center;
+  color: var(--border-item-color);
+  margin: 10px;
+  height: 50px;
+}
+
+.card-movie .score{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.card-movie .price-movie{
+  color: var(--border-item-color);
+  padding: 0;
+}
+
+.btn-details, .btn-details:visited {
+  background-color: var(--primary-color);
+  color:#ffffff;
+  border-radius: 0 0 10px 10px;
+  display: flex;  
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn-details:hover{
+  opacity: 0.8;
+  transition: .4s;
+}
+
+.btn-details span{
+  margin-left: 10px;
+}

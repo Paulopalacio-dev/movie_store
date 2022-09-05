@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import { useCart } from "../../context/CartContext";
 import MenuCart from "../menuCart/MenuCart";
-import MenuFavorite from "../menuFavorite/MenuFavorite";
-
-
 
 import './Header.css'
 
@@ -20,7 +17,7 @@ export default function Header(props){
   
   return(
     <container className="Header">
-      <Link to="/"><div className="Logo">== STORE MOVIE ==</div></Link>
+      <Link to="/"><div className="Logo">STORE</div></Link>
       <form onSubmit={buscar}>
         <input 
           type="text" 

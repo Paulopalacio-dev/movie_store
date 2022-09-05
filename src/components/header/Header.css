@@ -1,5 +1,6 @@
 .Header{
-  background-color:var(--secundary-color);
+  background-color:var(--bg);
+  border-bottom: var(--border);
   display: flex;
   padding: 10px;
   height: 60px;
@@ -13,7 +14,7 @@
   border-radius: 10px;
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
-  font-size: 12px;
+  font-size: 14px;
   height: 45px;
   line-height: 45px;
   text-align: center;
@@ -32,6 +33,7 @@
   padding-left: 15px;
   font-family: 'Montserrat';
   font-size: 20px;
+
 }
 
 .Header .menu-bar{
@@ -44,6 +46,7 @@
 
 .Header form .btn-search{
   background-color: var(--destak-color);
+  color: var(--secundary-color);
   border: none;
   border-radius: 10px;
   height: 2rem;

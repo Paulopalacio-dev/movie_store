@@ -1,18 +1,19 @@
 .Header{
-  background-color:var(--primary-color);
+  background-color:var(--secundary-color);
   display: flex;
   padding: 10px;
-  height: 80px;
+  height: 60px;
+  max-width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
 .Logo{
-  background: var(--destak-color);
+    background: var(--destak-color);
   border-radius: 10px;
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 12px;
   height: 45px;
   line-height: 45px;
   text-align: center;
@@ -21,17 +22,6 @@
   text-shadow: 1px 1px 10px #000000;
 }
 
-.Header .menu-bar{
-  font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
-  font-size: 18px;
-  height: 45px;
-  line-height: 45px;
-  text-align: center;
-  letter-spacing: 0.165em;
-  text-decoration: none;
-  
-}
 
 .Header form input{
   border-radius: 10px;
@@ -52,13 +42,14 @@
   cursor: pointer;
 }
 
-.Header form button{
+.Header form .btn-search{
   background-color: var(--destak-color);
   border: none;
   border-radius: 10px;
   height: 2rem;
   width: 100px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .2rem;
   cursor: pointer;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
+import { useCart } from "../../context/CartContext";
 import MenuCart from "../menuCart/MenuCart";
 import MenuFavorite from "../menuFavorite/MenuFavorite";
 
@@ -8,23 +9,18 @@ import MenuFavorite from "../menuFavorite/MenuFavorite";
 import './Header.css'
 
 export default function Header(props){
-
+  
   const [search, setSearch] = useState("");
+  
 
-
- 
-  function buscar(){
+  function buscar(e){
+    e.preventDefault()
     props.history.push("/search?query=" + search)
   }
-
+  
   return(
     <container className="Header">
-       
-      <div className="Logo">== STORE MOVIE ==</div>
-      <nav className="menu-bar">
-        <Link to="/">Home</Link> |{" "}
-        <Link to="/cart">Lançamentos</Link>
-      </nav>
+      <Link to="/"><div className="Logo">== STORE MOVIE ==</div></Link>
       <form onSubmit={buscar}>
         <input 
           type="text" 
@@ -33,13 +29,11 @@ export default function Header(props){
           onChange={e => setSearch(e.target.value)}
         />
        
-        <button type="submit">
-          <Link to="/search">Buscar</Link>
-        </button>
+        <button className="btn-search" type="submit">Buscar</button>
+     
       </form>
       
       <div className="menu-header"> 
-        <MenuFavorite/>
         <MenuCart/>       
       </div>
     </container>

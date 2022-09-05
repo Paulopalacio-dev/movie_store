@@ -1,12 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {  useCart } from "../../context/CartContext";
+
 
 import "./CardMovie.css";
 
 export default function CardMovie({ movie }) {
+ const cart = useCart( )
+ 
+ const add = movie => () => {
+  cart.addToCart(movie)
+ }
 
+
+//  console.log(movie)
   const imgUrl = "https://www.themoviedb.org/t/p/w200/"
-  
+
   return (
     <container className="card-movie">
         <span className="material-icons fav-btn">favorite</span>
@@ -29,10 +37,13 @@ export default function CardMovie({ movie }) {
             </div>
           </div>
         </main>
-        <button to="/search" className="btn-buy">
+        <button 
+        onClick={add(movie)}
+        to="/search" className="btn-buy">
             Adicionar
             <span className="material-icons">shopping_cart</span>
         </button>
-    </container>
+     </container>
+  
   );
 }

@@ -38,7 +38,7 @@ console.log(cart.cart)
             return (
               <main >
             <div className="item-cart">
-              <h3>{}</h3>
+              <h3>Filme</h3>
               <h5>1</h5>
               <h5>R$70,00</h5>
               <button onClick={remove(key)} className="delete-item">

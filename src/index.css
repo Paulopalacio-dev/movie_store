@@ -28,7 +28,7 @@ code {
 
 .content{
   display: flex;
-  margin: 70px;
+  margin: 50px;
   justify-content: center;
   flex-wrap: wrap;
 }

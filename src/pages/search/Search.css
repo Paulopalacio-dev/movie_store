@@ -1,0 +1,10 @@
+.btn-back{
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  color: var(--primary-color);
+  margin-left: 100px;
+  margin-top: 50px;
+}

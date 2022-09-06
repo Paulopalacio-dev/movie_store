@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useCart } from "../../context/CartContext";
 import MenuCart from "../menuCart/MenuCart";
 
@@ -8,11 +8,11 @@ import './Header.css'
 export default function Header(props){
   
   const [search, setSearch] = useState("");
-  
+  const navigate = useNavigate();
 
   function buscar(e){
     e.preventDefault()
-    props.history.push("/search?query=" + search)
+    navigate("/search?query=" + search)
   }
   
   return(

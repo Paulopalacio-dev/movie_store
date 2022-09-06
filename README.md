@@ -1,14 +1,21 @@
 
 ## Available Scripts
 
-### `npm install`
+git clone <this-repo>
 
-In the project directory, you can run:
+npm i
+  
+npm start
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `Objetivo deste Projeto`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Um shopping utilizando a TMDb API 
+  
+  CRIAÇÃO DO PROJETO: foi utilizado o ReactJs.
+  
+  INTEGRAÇÃO COM A API: utilizando Axios. Toda vez que renderiza a pagina a aplicaçao consulta a API e renderiza os dados direto nos cards da tela principal.
+  
+  PARA O CARRINHO: utilizei o Context API para adicionar, remover e limpar os itens do carrinho. E para que a quantidade de itens fique aparecendo no icone de entrar no carrinho utilizei o localStorage como forma de persistir os dados no navegador.
+ 
+  

@@ -14,7 +14,7 @@ export default function CartProvider ({children}) {
     console.log(movie)
     setCart((old) => {
       const newCart ={...old,
-      [movie.id]:[movie.title, movie.poster_path]
+      [movie.id]:movie
       }
       window.localStorage.setItem('cart', JSON.stringify(newCart))
       return(newCart)
@@ -27,7 +27,7 @@ export default function CartProvider ({children}) {
       const newCart = {}
       Object.keys(old).forEach(id => {
         if(id !== movieId){
-          newCart[id] = old(id)
+          newCart[id] = old[id]
         }
       })
       window.localStorage.setItem('cart', JSON.stringify(newCart))

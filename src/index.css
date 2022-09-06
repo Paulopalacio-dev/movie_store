@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #151616;
+  background: #ffffff;
   font-family: roboto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,14 +15,10 @@ code {
 
 .App {
   
-  min-height: 100vh;
-  
-
-  --border-item-color: #484a4d;
-  --border: 1px solid #474a4d;
-  --destak-color:#f5c53b;
-  --primary-color:#385ba1;
+  --destak-color:#FECF59;
+  --primary-color:#713BC7;
   --secundary-color: #474a4d;
+  --border: 1px solid #474a4d;
   --bg:  #242526;
  }
 

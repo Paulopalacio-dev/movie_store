@@ -3,7 +3,7 @@
 
 Para rodar o projeto siga os segintes passos:
 
-- git clone <this-repo>
+- git clone <https://github.com/Paulopalacio-dev/movie_store.git>
 
 - npm install
   

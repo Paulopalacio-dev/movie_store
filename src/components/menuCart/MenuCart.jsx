@@ -37,17 +37,17 @@ console.log(cart.cart)
           
         {Object.keys(cart.cart).map((key) => {
         const movie = cart.cart[key]
-        const imgUrl = "https://www.themoviedb.org/t/p/w200/"
+        const imgUrl = "https://www.themoviedb.org/t/p/w92/"
         return (
           <main key={key}>
             <div className="item-cart">
-              <div className="poster-image-cart" style={ {backgroundImage: `url(${imgUrl}${movie.backdrop_path})`}}></div>
+             <div className="img-item-cart"><img style={ {backgroundImage: `url(${imgUrl}${movie.poster_path})`}} alt=""/></div> 
               <div className="title-movie-cart">{movie.title}</div>
               <div className="value-item-cart">
                 <h5>1</h5>
                 <h4>R$70,00</h4>
                 <button onClick={remove(key)} className="delete-item-cart">
-                  <span class="material-icons" >delete</span>
+                  <span className="material-icons" >delete</span>
                 </button>
               </div>
             </div>    
@@ -62,7 +62,7 @@ console.log(cart.cart)
               <Link onClick={showSidebar} to="/cart" className="btn-buy-cart">
               Finalizar compra
               </Link>
-            </footer>
+          </footer>
           
         </div>  
       </container>  

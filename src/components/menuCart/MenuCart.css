@@ -64,17 +64,23 @@
   border-radius: 8px;
 }
 
-.poster-image-cart{
-  width: 5%;
-  margin: 10px;
+.img-item-cart{
+  display: flex;
+}
+.img-item-cart img{
+  min-width: 92px;
+  min-height: 135px;
+  margin: 0 12px;
   background-repeat: no-repeat;
-  padding: 40px 40px;
+  border-radius: 8px;
+  border: solid 1px var(--primary-color);
 }
 .title-movie-cart{
   width: 200px;
   font-size: 14px;
   text-align: left;
   justify-content: left;
+ 
 }
 .value-item-cart{
   display: flex;

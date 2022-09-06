@@ -1,11 +1,13 @@
 
-## Available Scripts
+### Available Scripts
 
-git clone <this-repo>
+Para rodar o projeto siga os segintes passos:
 
-npm i
+- git clone <this-repo>
+
+- npm install
   
-npm start
+- npm start
 
 
 ### `Objetivo deste Projeto`

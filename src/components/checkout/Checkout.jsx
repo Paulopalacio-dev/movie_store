@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
-import './MenuCart.css'
+import './Checkout.css'
 
 
-export default function MenuCart() {
+export default function Checkout() {
   const cart = useCart()
-  const [sidebar, setSidebar] = useState( false);
+  const [sidebar, setSidebar] = useState(true);
   const showSidebar = () => setSidebar(!sidebar);
   const itemsCount = Object.keys(cart.cart).length
   const remove = id => () => {
@@ -19,17 +19,12 @@ export default function MenuCart() {
 
 console.log(cart.cart)
   return (
-    <container className="menu-container">
-        <div className="menu-cart">
-          <button onClick={showSidebar} className="btn-cart">
-            <span className="material-icons">shopping_cart</span>
-            {itemsCount > 0 && <span className="count">({itemsCount})</span>}
-          </button>
-        </div>
-        <div  className={sidebar ? "nav-menu active" : "nav-menu"} >
-          <header className="header-cart">
+    <container className="checkout-container">
+      
+        <div  className={sidebar ? "checkout-menu active" : "menu-checkout"} style={{zIndex:1}}>
+          <header className="header-checkout">
           
-            <h1 className="header-title">Meu Carrinho</h1>   
+            <h1 className="header-title-checkout">Meu Carrinho</h1>   
             <button onClick={clearCart} className="clear-cart">Esvaziar Carrinho</button>
           </header>
           
@@ -54,13 +49,13 @@ console.log(cart.cart)
             )
           })}
           <footer className="footer">
-              <div className="total-cart">
+              <div className="total-checkout">
                 <h2>Total</h2>
                 <h2>R$ {itemsCount * '70'},00</h2>  
               </div> 
-              <Link onClick={showSidebar} to="/cart" className="btn-buy-cart">
+              {/* <Link  to="/cart" className="btn-buy-checkout">
               Finalizar compra
-              </Link>
+              </Link> */}
           </footer>
           
         </div>  

@@ -1,7 +1,5 @@
 import React from "react";
 import {  useCart } from "../../context/CartContext";
-
-
 import "./CardMovie.css";
 
 export default function CardMovie({ movie }) {
@@ -11,9 +9,7 @@ export default function CardMovie({ movie }) {
   cart.addToCart(movie)
  }
 
-
-//  console.log(movie)
-  const imgUrl = "https://www.themoviedb.org/t/p/w200/"
+ const imgUrl = "https://www.themoviedb.org/t/p/w200/"
 
   return (
     <container className="card-movie">
@@ -26,6 +22,7 @@ export default function CardMovie({ movie }) {
         <main className="card-details">
           <div className="name-movie">
             <h4>{movie.title}</h4> 
+            <h6>{movie.genre}</h6>
           </div>
           <div className="details">
             <div className="score">
@@ -39,7 +36,7 @@ export default function CardMovie({ movie }) {
         </main>
         <button 
         onClick={add(movie)}
-        to="/search" className="btn-buy">
+        className="btn-buy">
             Adicionar
             <span className="material-icons">shopping_cart</span>
         </button>

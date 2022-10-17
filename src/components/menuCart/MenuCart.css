@@ -14,16 +14,21 @@
     padding: 2rem;
     overflow: hidden;
     opacity: 0;
-    transition: 500ms;
+    transition: 100ms;
     transition: height 500ms ease;
+    z-index:-1;
 }
 .nav-menu.active {
   visibility: visible;
   opacity: 1;
   right: 0;
-  transition: 500ms;
+  transition: 100ms;
+  z-index:1;
 }
-.menu-bars:hover{
+.menu-cart{
+  width: 90px;
+}
+.btn-cart:hover{
   color:var(--destak-color);
   filter: brightness(1.2);
 }

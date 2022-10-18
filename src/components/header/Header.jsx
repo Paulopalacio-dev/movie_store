@@ -23,6 +23,7 @@ export default function Header(props){
           type="text" 
           name="query"
           id="query" 
+          placeholder="Buscar por um filme"
           onChange={e => setSearch(e.target.value)}
         />
        

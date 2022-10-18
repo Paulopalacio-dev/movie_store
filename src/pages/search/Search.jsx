@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import axios from "axios";
+import api, {api_options} from "../../services/api";
 import CardMovie from "../../components/cardMovie/CardMovie";
 import './Search.css'
 
@@ -9,15 +9,13 @@ export default function Search(props) {
   const[movies, setMovies] = useState([]);
   const location = useLocation()
   const navigate = useNavigate()
-  const urlAPI = "https://api.themoviedb.org/3/search/movie" +
-                  location.search +
-                  "&api_key=88401dc223b546c0d359bcf16b8f8c51&language=pt-BR"
+  const urlAPI = "/search/movie" + location.search
   
   useEffect(() => {load()}, [location.search])
 
   async function load(){
     try{
-      const resposta = await axios.get(urlAPI)
+      const resposta = await api.get(urlAPI, api_options())
       setMovies(resposta.data.results)
       
       console.log(location)

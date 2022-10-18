@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
-import { useCart } from "../../context/CartContext";
+
 import MenuCart from "../menuCart/MenuCart";
 
 import './Header.css'
@@ -13,7 +13,7 @@ export default function Header(props){
   function buscar(e){
     e.preventDefault()
     navigate("/search?query=" + search)
-  }
+   }
   
   return(
     <container className="Header">

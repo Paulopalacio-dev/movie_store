@@ -23,7 +23,7 @@ console.log(cart.cart)
         <div className="menu-cart">
           <button onClick={showSidebar} className="btn-cart">
             <span className="material-icons">shopping_cart</span>
-            {itemsCount > 0 && <span className="count">({itemsCount})</span>}
+            {itemsCount > 0 && <span className="item-count">{itemsCount}</span>}
           </button>
         </div>
         <div  className={sidebar ? "nav-menu active" : "nav-menu"} >
